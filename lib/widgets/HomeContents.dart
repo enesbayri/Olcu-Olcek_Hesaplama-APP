@@ -56,9 +56,9 @@ class _homeContentWidgetState extends State<homeContentWidget> {
           validateError: validateError),
       Positioned(
         top: MediaQuery.of(context).size.height * 0.35 - 25,
-        left: MediaQuery.of(context).size.width / 2 - 50,
+        left: MediaQuery.of(context).size.width / 2 - 60,
         child: AnimatedButton(
-          width: 100,
+          width: 120,
           height: 50,
           // ignore: sort_child_properties_last
           child: Row(
