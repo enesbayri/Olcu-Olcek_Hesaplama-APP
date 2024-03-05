@@ -11,17 +11,17 @@ class TextStyleHelper{
   // ignore: non_constant_identifier_names
   static TextStyle BoldTextStyle=const TextStyle(fontWeight: FontWeight.bold);
   static TextStyle floatingLabelStyle=TextStyle(fontWeight: FontWeight.bold, color: ColorUiHelper.primaryContentColor);
-  static TextStyle validateErrorAnswerTextStyle=const TextStyle(fontSize: 24,color: Colors.red,fontWeight: FontWeight.bold);
+  static TextStyle validateErrorAnswerTextStyle=const TextStyle(fontSize: 20,color: Colors.red,fontWeight: FontWeight.bold);
   static TextStyle answerContainerWelcomeMessageTextStyle=const TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 20);
-  static TextStyle headerToFromValueTextStyle=const TextStyle(color: Colors.white,fontSize: 48, fontWeight: FontWeight.bold);     
-  static TextStyle inputMeasureTypeTextStyle= const TextStyle(color: Colors.black,fontSize: 24,fontWeight: FontWeight.bold); 
+  static TextStyle headerToFromValueTextStyle=const TextStyle(color: Colors.white,fontSize: 40, fontWeight: FontWeight.bold);     
+  static TextStyle inputMeasureTypeTextStyle= const TextStyle(color: Colors.black,fontSize: 20,fontWeight: FontWeight.bold); 
   static TextStyle lastCalcutesTitleTextStyle=const TextStyle(fontWeight: FontWeight.bold,color: Colors.black);
   // ignore: non_constant_identifier_names
   static TextStyle DismisseCalcuteTextStyle=const TextStyle(color: Colors.white,fontWeight: FontWeight.bold);
   // ignore: non_constant_identifier_names
-  static TextStyle LastCalcuteDateTextStyle=const TextStyle(fontSize: 12);    
+  static TextStyle LastCalcuteDateTextStyle=const TextStyle(fontSize: 10);    
 
   // ignore: non_constant_identifier_names
   static TextStyle TitleStyle = GoogleFonts.quicksand(
-      fontWeight: FontWeight.w900, fontSize: 24, color: ColorUiHelper.buttonGradientColor);  
+      fontWeight: FontWeight.w900, fontSize: 20, color: ColorUiHelper.buttonGradientColor);  
 }
