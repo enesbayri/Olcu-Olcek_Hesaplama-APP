@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 
 class ColorUiHelper {
-  static Color primaryContentColor =  const Color.fromRGBO(231, 249, 136, 1);
+  static Color primaryContentColor =  const Color.fromRGBO(143, 73, 246, 1);
 
   // ignore: non_constant_identifier_names
   static Color ContentBackgroundColor =  const Color.fromRGBO(42, 42, 42, 1);
