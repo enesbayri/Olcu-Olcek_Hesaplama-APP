@@ -25,8 +25,7 @@ class _LastCalcuteListViewState extends State<LastCalcuteListView> {
     calcutes = database.getCalcutesfromStorage().reversed.toList();
     return calcutes.isEmpty ? Center(child: Text("HESAPLAMANIZ BULUNMAMAKTADIR!",style: TextStyleHelper.BoldTextStyle,),): ListWheelScrollView(
       children: lastCalcutes(),
-      scrollBehavior:  ScrollBehavior(
-          androidOverscrollIndicator: AndroidOverscrollIndicator.stretch),
+      scrollBehavior:  const ScrollBehavior(),
       itemExtent: 75,
       perspective: 0.005,
       diameterRatio: 1.5,
@@ -75,6 +74,7 @@ class _LastCalcuteListViewState extends State<LastCalcuteListView> {
                     color: ColorUiHelper.primaryContentColor.withOpacity(0.5),
                   ),
                   leading: CircleAvatar(
+                    backgroundColor: ColorUiHelper.lastCalcuteLeadingColor,
                     child: Text(
                       "${clcte.created.day}/${clcte.created.month}",
                       style: TextStyleHelper.LastCalcuteDateTextStyle,

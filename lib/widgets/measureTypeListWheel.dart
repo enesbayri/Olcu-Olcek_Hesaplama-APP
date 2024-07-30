@@ -52,8 +52,7 @@ class _measureTypeInputState extends State<measurTypeeInput> {
             WheelListViewContainer(fromselect,4),
           ],
           itemExtent: 50,
-          scrollBehavior: const ScrollBehavior(
-              androidOverscrollIndicator: AndroidOverscrollIndicator.stretch),
+          scrollBehavior: const ScrollBehavior(),
           onSelectedItemChanged: (value) {
             setState(() {
               widget.measure(value);

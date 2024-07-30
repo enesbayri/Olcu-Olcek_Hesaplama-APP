@@ -31,7 +31,7 @@ class ScannerAnimation extends AnimatedWidget {
       child: Opacity(
         opacity: 1.0,
         child: Container(
-          height: 60.0,
+          height: 40.0,
           width: width,
           decoration: BoxDecoration(
             gradient: LinearGradient(

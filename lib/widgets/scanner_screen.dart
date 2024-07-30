@@ -26,7 +26,7 @@ with SingleTickerProviderStateMixin {
   @override
   void initState() {
     _animationController = AnimationController(
-        duration: const Duration(seconds: 1), vsync: this);
+        duration: const Duration(milliseconds: 500), vsync: this);
 
     _animationController.addStatusListener((status) {
       if (status == AnimationStatus.completed) {

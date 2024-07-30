@@ -24,7 +24,7 @@ class StartApplication extends StatelessWidget {
   }
 
   Future<int> loadingTime(){
-    return Future.delayed(const Duration(milliseconds: 2000),(){
+    return Future.delayed(const Duration(milliseconds: 1000),(){
       return 1;
     });
   }

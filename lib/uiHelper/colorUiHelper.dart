@@ -12,6 +12,8 @@ class ColorUiHelper {
   static Color answerContainerColor=Colors.white;
   static Color headerFromBetweentoIconColor=Colors.white;
   static Color measureInputTypeShadowColor=Colors.grey.shade700;
+
+  static Color lastCalcuteLeadingColor= Colors.black;
   
   // ignore: non_constant_identifier_names
   static Color DismisseCalcuteColor=Colors.red;
