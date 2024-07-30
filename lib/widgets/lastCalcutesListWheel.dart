@@ -4,20 +4,21 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_11/database/HiveStorage.dart';
+import 'package:flutter_application_11/locator/get_it.dart';
 import 'package:flutter_application_11/models/calcute.dart';
 import 'package:flutter_application_11/uiHelper/borderHelper.dart';
 import 'package:flutter_application_11/uiHelper/colorUiHelper.dart';
 import 'package:flutter_application_11/uiHelper/textstyleUiHelper.dart';
 
 class LastCalcuteListView extends StatefulWidget {
-  LastCalcuteListView({super.key});
+  const LastCalcuteListView({super.key});
 
   @override
   State<LastCalcuteListView> createState() => _LastCalcuteListViewState();
 }
 
 class _LastCalcuteListViewState extends State<LastCalcuteListView> {
-  final HiveStorage database = HiveStorage();
+  final HiveStorage database = locator<HiveStorage>();
   List<calcute> calcutes = [];
 
   @override

@@ -40,6 +40,8 @@ dependencies:
   flutter_shake_animated: ^0.0.5
   button_animations: ^2.0.0+3
   google_fonts: ^6.1.0
+  get_it: ^7.6.7
+
 
 dev_dependencies:
   flutter_test:

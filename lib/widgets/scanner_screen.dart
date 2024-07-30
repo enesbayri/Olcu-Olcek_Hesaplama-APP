@@ -58,7 +58,7 @@ with SingleTickerProviderStateMixin {
                           
                           borderRadius:
                               const BorderRadius.all(Radius.circular(20)),
-                          border: Border.all(color: ColorUiHelper.loadingPageBorderColor, width: 7),
+                          border: Border.all(color: ColorUiHelper.primaryContentColor, width: 7),
                           ),
                               
                       child: const ClipRRect(

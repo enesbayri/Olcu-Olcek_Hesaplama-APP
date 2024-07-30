@@ -22,7 +22,7 @@ class LoadingPage extends StatelessWidget {
                   decoration: BoxDecoration(
                     
                       borderRadius: BorderRadius.circular(16),
-                      border: Border.all(color: ColorUiHelper.loadingPageBorderColor, width: 6)),
+                      border: Border.all(color: ColorUiHelper.primaryContentColor, width: 6)),
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.end,

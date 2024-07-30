@@ -4,6 +4,7 @@
 import 'package:button_animations/button_animations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_11/database/HiveStorage.dart';
+import 'package:flutter_application_11/locator/get_it.dart';
 import 'package:flutter_application_11/models/calcute.dart';
 import 'package:flutter_application_11/uiHelper/borderHelper.dart';
 import 'package:flutter_application_11/uiHelper/colorUiHelper.dart';
@@ -44,7 +45,7 @@ class _homeContentWidgetState extends State<homeContentWidget> {
   @override
   void initState() {
     super.initState();
-    database = HiveStorage();
+    database = locator<HiveStorage>();
   }
 
   @override
@@ -236,6 +237,7 @@ class _homeContentWidgetState extends State<homeContentWidget> {
         shape: RoundedRectangleBorder(borderRadius:BorderHelper.radiusCircular24,side: BorderHelper.borderSide),
         onSelected: (value) {
           setState(() {
+            database.updatePrimaryColorFromStorage(ColorUiHelper.popupColorList.indexOf(value));
             ColorUiHelper.primaryContentColor=value;
             BorderHelper.borderSideLight=BorderSide(color: ColorUiHelper.primaryContentColor,);
             BorderHelper.borderSide=BorderSide(color: ColorUiHelper.primaryContentColor,width: 2,);

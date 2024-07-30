@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_application_11/database/HiveStorage.dart';
+import 'package:flutter_application_11/locator/get_it.dart';
 import 'package:flutter_application_11/models/calcute.dart';
 import 'package:flutter_application_11/router/startApplication.dart';
 import 'package:flutter_application_11/uiHelper/colorUiHelper.dart';
@@ -12,6 +14,8 @@ void main(List<String> args) async {
   await Hive.initFlutter("CalcuteScale");
   Hive.registerAdapter(calcuteAdapter());
   await Hive.openBox<calcute>("calcutes");
+  await Hive.openBox<String>("primaryColor");
+  locatorSetup();
   await SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
   ]);
@@ -25,6 +29,8 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    HiveStorage storage = locator<HiveStorage>();
+    ColorUiHelper.primaryContentColor =storage.getPrimaryColorFromStorage(); 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
